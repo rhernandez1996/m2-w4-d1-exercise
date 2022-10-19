@@ -9,19 +9,19 @@
 <body>
 
     <div id = "component1">
-       <mycomponent1></mycomponent1>
+       
     </div>
 
 <script>
     //Global registered component
-    Vue.component( 'mycomponent1', {
+    Vue.component( 'mycomponent', {
         template: '<div><h1>Welcome to VUE Components!</h1></div>'
     });
 
     //Vue Instance
     var vm1 = new Vue({
         el: '#component1'
-    })
+    });
 </script>
     
 </body>`
