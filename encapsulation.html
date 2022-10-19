@@ -15,11 +15,11 @@ function createCircle(radius) {
   }
 };
 
-var circle1 = createCircle();
+var circle1 = createCircle(3); /*value*/
 
 //Write console.log here
-
-
+console.log("Area is" + circle1.area()); /*does the work of giving us the area of the value*/
+console.log("Radius is" + circle1.radius()); /*cant access it because its outside the method*/
 //Encapsulation Technique 2: private variables
 
 function createCircle(radius) {
@@ -35,10 +35,11 @@ function createCircle(radius) {
     }
 };
 
-var circle2 = createCircle();
+var circle2 = createCircle(3);
 
 //Write console.log here
-
+console.log("Circumference is" + circle2.circumference()); /* will give us circumference of the value*/
+console.log("Diameter is" + circle2.diameter()); /*this will fail because out of parameter only if outside the function*/
 
 </script>
 
